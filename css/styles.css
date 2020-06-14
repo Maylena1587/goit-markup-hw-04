@@ -48,7 +48,11 @@
 .element {
   width: 370px;
 }
-.shadow {
+.shadow-box {
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+}
+.shadow:hover {
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12);
 }
@@ -338,8 +342,28 @@ body {
   padding: 30px 32px 24px 32px;
   background: #ffffff;
 }
+.main-network {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .main-network .network + .network {
   margin-left: 10px;
+}
+.network-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--primary-white-color);
+}
+.network-link:hover {
+  background-color: var(--accent-color);
+}
+.network-link:hover .icon {
+  fill: var(--primary-white-color);
 }
 .team-list .title {
   color: var(--title-text-color);
@@ -420,6 +444,22 @@ body {
 
 .list .item {
   text-decoration: none;
+}
+.item-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+}
+.item-icon:hover {
+  background-color: var(--accent-color);
+}
+.icon-color {
+  fill: var(--primary-white-color);
 }
 .developed {
   margin-top: 0px;
